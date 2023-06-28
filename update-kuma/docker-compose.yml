@@ -5,7 +5,7 @@ services:
     container_name: uptime-kuma
     restart: always
     ports:
-      - 3001:3001
+      - 3002:3001
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - .:/app/data

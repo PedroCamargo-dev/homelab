@@ -1,2 +1,18 @@
 192.168.1.1 router
 192.168.1.1 router.home
+
+127.0.0.1 pi.hole.local
+localhost pi.hole.local
+[::1] pi.hole.local
+
+127.0.0.1#6610 onedev.local
+localhost#6610 onedev.local
+[::1]#6610 onedev.local
+
+127.0.0.1#3000 homelab.local
+localhost#3000 homelab.local
+[::1]#3000 homelab.local
+
+127.0.0.1#3001 uptime-kuma.local
+localhost#3001 uptime-kuma.local
+[::1]#3001 uptime-kuma.local
