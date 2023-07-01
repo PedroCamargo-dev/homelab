@@ -1,0 +1,1 @@
+{"StartTimeUtc":"2023-07-01T02:00:00.0247737Z","EndTimeUtc":"2023-07-01T02:00:00.9262435Z","Status":"Completed","Name":"Extrair imagens dos cap\u00EDtulos","Key":"RefreshChapterImages","Id":"4e6637c832ed644d1af3370a2506e80a"}

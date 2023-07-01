@@ -1,0 +1,283 @@
+/videos/1823ad9b-b40c-4c5f-dcb4-37d558033aef/live.m3u8
+
+{"Protocol":1,"Id":"128efa3f246ababb4f61e1a053e92d6b","Path":"http://172.26.0.2:8096/LiveTv/LiveStreamFiles/0993ed58aee844c4bf44dd3ab458ea5d/stream.ts","EncoderPath":null,"EncoderProtocol":null,"Type":0,"Container":"mpegts","Size":null,"Name":null,"IsRemote":true,"ETag":null,"RunTimeTicks":null,"ReadAtNativeFramerate":false,"IgnoreDts":true,"IgnoreIndex":false,"GenPtsInput":false,"SupportsTranscoding":true,"SupportsDirectStream":true,"SupportsDirectPlay":true,"IsInfiniteStream":true,"RequiresOpening":true,"OpenToken":null,"RequiresClosing":true,"LiveStreamId":"a17c75760a04e99b68cf766e11316e1c_09efa0d56b934a82adec00a87b837fb0_128efa3f246ababb4f61e1a053e92d6b","BufferMs":null,"RequiresLooping":false,"SupportsProbing":true,"VideoType":null,"IsoType":null,"Video3DFormat":null,"MediaStreams":[{"Codec":"hevc","CodecTag":null,"Language":null,"ColorRange":"tv","ColorSpace":"bt709","ColorTransfer":"bt709","ColorPrimaries":"bt709","DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/90000","CodecTimeBase":null,"Title":null,"VideoRange":"SDR","VideoRangeType":"SDR","VideoDoViTitle":null,"LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":"720p HEVC SDR","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":null,"BitRate":8000000,"BitDepth":8,"RefFrames":1,"PacketLength":null,"Channels":null,"SampleRate":null,"IsDefault":false,"IsForced":false,"Height":720,"Width":1280,"AverageFrameRate":29.97003,"RealFrameRate":29.97003,"Profile":"Main","Type":1,"AspectRatio":"16:9","Index":-1,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":"yuv420p","Level":93,"IsAnamorphic":false},{"Codec":"aac","CodecTag":null,"Language":null,"ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/90000","CodecTimeBase":null,"Title":null,"VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":"AAC - Stereo","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":"stereo","BitRate":96028,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":2,"SampleRate":44100,"IsDefault":false,"IsForced":false,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":"LC","Type":0,"AspectRatio":null,"Index":-1,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":null,"Level":0,"IsAnamorphic":null}],"MediaAttachments":[],"Formats":[],"Bitrate":8096028,"Timestamp":null,"RequiredHttpHeaders":{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.85 Safari/537.36"},"TranscodingUrl":null,"TranscodingSubProtocol":null,"TranscodingContainer":null,"AnalyzeDurationMs":3000,"DefaultAudioStreamIndex":null,"DefaultSubtitleStreamIndex":null}
+
+/usr/lib/jellyfin-ffmpeg/ffmpeg -analyzeduration 3000000 -user_agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.85 Safari/537.36" -fflags +igndts -f mpegts -autorotate 0 -i "http://172.26.0.2:8096/LiveTv/LiveStreamFiles/0993ed58aee844c4bf44dd3ab458ea5d/stream.ts" -map_metadata -1 -map_chapters -1 -threads 0 -sn -codec:v:0 libx264 -preset superfast -crf 23 -maxrate 8000000 -bufsize 16000000 -x264opts:0 subme=0:me_range=4:rc_lookahead=10:me=dia:no_chroma_me:8x8dct=0:partitions=none -force_key_frames:0 "expr:gte(t,n_forced*3)" -sc_threshold:v:0 0 -vf "setparams=color_primaries=bt709:color_trc=bt709:colorspace=bt709,scale=trunc(min(max(iw\,ih*a)\,min(1280\,720*a))/2)*2:trunc(min(max(iw/a\,ih)\,min(1280/a\,720))/2)*2,format=yuv420p" -flags -global_header -codec:a:0 copy -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 3 -hls_segment_type mpegts -start_number 0 -hls_base_url "hls/cb82a3cbdb8f74f971d1a7cf5c6148a7/" -hls_segment_filename "/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7%d.ts" -hls_playlist_type event -hls_list_size 0 -y "/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7.m3u8"
+
+
+ffmpeg version 5.1.3-Jellyfin Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.3.0-1ubuntu1~22.04.1)
+  configuration: --prefix=/usr/lib/jellyfin-ffmpeg --target-os=linux --extra-libs=-lfftw3f --extra-version=Jellyfin --disable-doc --disable-ffplay --disable-ptx-compression --disable-static --disable-libxcb --disable-sdl2 --disable-xlib --enable-lto --enable-gpl --enable-version3 --enable-shared --enable-gmp --enable-gnutls --enable-chromaprint --enable-libdrm --enable-libass --enable-libfreetype --enable-libfribidi --enable-libfontconfig --enable-libbluray --enable-libmp3lame --enable-libopus --enable-libtheora --enable-libvorbis --enable-libopenmpt --enable-libdav1d --enable-libwebp --enable-libvpx --enable-libx264 --enable-libx265 --enable-libzvbi --enable-libzimg --enable-libfdk-aac --arch=amd64 --enable-libsvtav1 --enable-libshaderc --enable-libplacebo --enable-vulkan --enable-opencl --enable-vaapi --enable-amf --enable-libmfx --enable-ffnvcodec --enable-cuda --enable-cuda-llvm --enable-cuvid --enable-nvdec --enable-nvenc
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+[hevc @ 0x55800e63e9c0] PPS id out of range: 0
+    Last message repeated 1 times
+[hevc @ 0x55800e63e9c0] Error parsing NAL unit #2.
+Input #0, mpegts, from 'http://172.26.0.2:8096/LiveTv/LiveStreamFiles/0993ed58aee844c4bf44dd3ab458ea5d/stream.ts':
+  Duration: N/A, start: 29958.930511, bitrate: N/A
+  Program 1 
+    Metadata:
+      service_name    : Service01
+      service_provider: FFmpeg
+  Stream #0:0[0x100]: Video: hevc (Main) ([36][0][0][0] / 0x0024), yuv420p(tv, bt709), 1280x720 [SAR 1:1 DAR 16:9], 29.97 fps, 29.97 tbr, 90k tbn
+  Stream #0:1[0x101](por): Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, 96 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+[hevc @ 0x55800e646d40] Could not find ref with POC 0
+[libx264 @ 0x55800e664a80] using SAR=1/1
+[libx264 @ 0x55800e664a80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x55800e664a80] profile Main, level 3.2, 4:2:0, 8-bit
+Output #0, hls, to '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7.m3u8':
+  Metadata:
+    encoder         : Lavf59.27.100
+  Stream #0:0: Video: h264, yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 29.97 fps, 90k tbn
+    Metadata:
+      encoder         : Lavc59.37.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 8000000/0/0 buffer size: 16000000 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, 96 kb/s
+frame=    1 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    
+frame=    7 fps=0.0 q=0.0 size=N/A time=00:00:00.23 bitrate=N/A speed=0.305x    
+frame=   10 fps=6.7 q=0.0 size=N/A time=00:00:00.23 bitrate=N/A speed=0.155x    
+frame=   12 fps=5.3 q=0.0 size=N/A time=00:00:00.23 bitrate=N/A speed=0.104x    
+frame=   17 fps=5.2 q=0.0 size=N/A time=00:00:00.46 bitrate=N/A speed=0.141x    
+frame=   18 fps=4.7 q=26.0 size=N/A time=00:00:00.48 bitrate=N/A speed=0.128x    
+frame=   21 fps=4.6 q=23.0 size=N/A time=00:00:00.69 bitrate=N/A speed=0.152x    
+frame=   24 fps=4.4 q=23.0 size=N/A time=00:00:00.69 bitrate=N/A speed=0.128x    
+frame=   25 fps=3.9 q=23.0 size=N/A time=00:00:00.71 bitrate=N/A speed=0.113x    
+frame=   32 fps=4.6 q=27.0 size=N/A time=00:00:00.95 bitrate=N/A speed=0.137x    
+frame=   35 fps=4.5 q=24.0 size=N/A time=00:00:01.18 bitrate=N/A speed=0.151x    
+frame=   38 fps=4.3 q=24.0 size=N/A time=00:00:01.18 bitrate=N/A speed=0.133x    
+frame=   42 fps=4.4 q=26.0 size=N/A time=00:00:01.41 bitrate=N/A speed=0.148x    
+frame=   47 fps=4.6 q=26.0 size=N/A time=00:00:01.41 bitrate=N/A speed=0.138x    
+frame=   54 fps=4.9 q=25.0 size=N/A time=00:00:01.64 bitrate=N/A speed=0.15x    
+frame=   57 fps=5.0 q=25.0 size=N/A time=00:00:01.88 bitrate=N/A speed=0.164x    
+frame=   61 fps=5.1 q=24.0 size=N/A time=00:00:01.90 bitrate=N/A speed=0.158x    
+frame=   65 fps=5.1 q=23.0 size=N/A time=00:00:02.11 bitrate=N/A speed=0.166x    
+frame=   68 fps=5.1 q=23.0 size=N/A time=00:00:02.13 bitrate=N/A speed=0.161x    
+frame=   75 fps=5.4 q=24.0 size=N/A time=00:00:02.34 bitrate=N/A speed=0.169x    
+frame=   79 fps=5.5 q=25.0 size=N/A time=00:00:02.57 bitrate=N/A speed=0.179x    
+frame=   84 fps=5.6 q=25.0 size=N/A time=00:00:02.80 bitrate=N/A speed=0.186x    
+frame=   89 fps=5.7 q=27.0 size=N/A time=00:00:02.80 bitrate=N/A speed=0.18x    
+frame=   93 fps=5.8 q=27.0 size=N/A time=00:00:03.04 bitrate=N/A speed=0.188x    
+frame=   95 fps=5.7 q=24.0 size=N/A time=00:00:03.06 bitrate=N/A speed=0.183x    
+frame=  101 fps=5.8 q=25.0 size=N/A time=00:00:03.25 bitrate=N/A speed=0.188x    
+frame=  107 fps=6.0 q=23.0 size=N/A time=00:00:03.48 bitrate=N/A speed=0.194x    
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a70.ts' for writing
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7.m3u8.tmp' for writing
+frame=  112 fps=6.0 q=27.0 size=N/A time=00:00:03.71 bitrate=N/A speed= 0.2x    
+frame=  115 fps=6.0 q=27.0 size=N/A time=00:00:03.71 bitrate=N/A speed=0.192x    
+frame=  119 fps=6.0 q=27.0 size=N/A time=00:00:03.94 bitrate=N/A speed=0.199x    
+frame=  126 fps=6.2 q=24.0 size=N/A time=00:00:04.17 bitrate=N/A speed=0.205x    
+frame=  137 fps=6.5 q=22.0 size=N/A time=00:00:04.41 bitrate=N/A speed=0.21x    
+frame=  149 fps=6.9 q=24.0 size=N/A time=00:00:04.87 bitrate=N/A speed=0.227x    
+frame=  163 fps=7.4 q=22.0 size=N/A time=00:00:05.34 bitrate=N/A speed=0.243x    
+frame=  176 fps=7.8 q=23.0 size=N/A time=00:00:05.80 bitrate=N/A speed=0.257x    
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a71.ts' for writing
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7.m3u8.tmp' for writing
+frame=  199 fps=8.6 q=26.0 size=N/A time=00:00:06.50 bitrate=N/A speed=0.282x    
+frame=  218 fps=9.1 q=23.0 size=N/A time=00:00:07.19 bitrate=N/A speed=0.301x    
+frame=  228 fps=9.3 q=24.0 size=N/A time=00:00:07.47 bitrate=N/A speed=0.306x    
+frame=  238 fps=9.5 q=24.0 size=N/A time=00:00:07.91 bitrate=N/A speed=0.318x    
+frame=  266 fps= 10 q=25.0 size=N/A time=00:00:08.84 bitrate=N/A speed=0.348x    
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a72.ts' for writing
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7.m3u8.tmp' for writing
+frame=  300 fps= 12 q=24.0 size=N/A time=00:00:10.00 bitrate=N/A speed=0.386x    
+frame=  333 fps= 13 q=25.0 size=N/A time=00:00:10.95 bitrate=N/A speed=0.414x    
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a73.ts' for writing
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7.m3u8.tmp' for writing
+frame=  379 fps= 14 q=27.0 size=N/A time=00:00:12.58 bitrate=N/A speed=0.466x    
+frame=  429 fps= 16 q=25.0 size=N/A time=00:00:14.21 bitrate=N/A speed=0.516x    
+frame=  444 fps= 16 q=24.0 size=N/A time=00:00:14.67 bitrate=N/A speed=0.524x    
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a74.ts' for writing
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7.m3u8.tmp' for writing
+frame=  491 fps= 17 q=19.0 size=N/A time=00:00:16.30 bitrate=N/A speed=0.571x    
+frame=  537 fps= 18 q=22.0 size=N/A time=00:00:17.92 bitrate=N/A speed=0.617x    
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a75.ts' for writing
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7.m3u8.tmp' for writing
+frame=  559 fps= 19 q=27.0 size=N/A time=00:00:18.62 bitrate=N/A speed=0.629x    
+frame=  584 fps= 19 q=24.0 size=N/A time=00:00:19.34 bitrate=N/A speed=0.642x    
+frame=  622 fps= 20 q=24.0 size=N/A time=00:00:20.71 bitrate=N/A speed=0.676x    
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a76.ts' for writing
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7.m3u8.tmp' for writing
+frame=  649 fps= 21 q=25.0 size=N/A time=00:00:21.66 bitrate=N/A speed=0.69x    
+frame=  673 fps= 21 q=25.0 size=N/A time=00:00:22.36 bitrate=N/A speed=0.701x    
+frame=  691 fps= 21 q=28.0 size=N/A time=00:00:23.05 bitrate=N/A speed=0.711x    
+frame=  703 fps= 21 q=27.0 size=N/A time=00:00:23.28 bitrate=N/A speed=0.706x    
+frame=  732 fps= 22 q=22.0 size=N/A time=00:00:24.42 bitrate=N/A speed=0.729x    
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a77.ts' for writing
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7.m3u8.tmp' for writing
+frame=  749 fps= 22 q=19.0 size=N/A time=00:00:24.91 bitrate=N/A speed=0.731x    
+frame=  765 fps= 22 q=22.0 size=N/A time=00:00:25.40 bitrate=N/A speed=0.734x    
+frame=  783 fps= 22 q=21.0 size=N/A time=00:00:26.07 bitrate=N/A speed=0.742x    
+frame=  798 fps= 22 q=26.0 size=N/A time=00:00:26.54 bitrate=N/A speed=0.743x    
+frame=  801 fps= 22 q=26.0 size=N/A time=00:00:26.56 bitrate=N/A speed=0.731x    
+frame=  806 fps= 22 q=26.0 size=N/A time=00:00:26.79 bitrate=N/A speed=0.726x    
+frame=  814 fps= 22 q=26.0 size=N/A time=00:00:27.02 bitrate=N/A speed=0.721x    
+frame=  818 fps= 22 q=26.0 size=N/A time=00:00:27.26 bitrate=N/A speed=0.717x    
+frame=  824 fps= 21 q=26.0 size=N/A time=00:00:27.49 bitrate=N/A speed=0.712x    
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a78.ts' for writing
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7.m3u8.tmp' for writing
+frame=  829 fps= 21 q=27.0 size=N/A time=00:00:27.49 bitrate=N/A speed=0.699x    
+frame=  860 fps= 21 q=25.0 size=N/A time=00:00:28.65 bitrate=N/A speed=0.716x    
+frame=  895 fps= 22 q=24.0 size=N/A time=00:00:29.81 bitrate=N/A speed=0.736x    
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a79.ts' for writing
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7.m3u8.tmp' for writing
+frame=  921 fps= 22 q=21.0 size=N/A time=00:00:30.74 bitrate=N/A speed=0.749x    
+frame=  963 fps= 23 q=21.0 size=N/A time=00:00:32.11 bitrate=N/A speed=0.773x    
+frame=  986 fps= 23 q=23.0 size=N/A time=00:00:32.80 bitrate=N/A speed=0.78x    
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a710.ts' for writing
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7.m3u8.tmp' for writing
+frame= 1014 fps= 24 q=26.0 size=N/A time=00:00:33.73 bitrate=N/A speed=0.792x    
+frame= 1041 fps= 24 q=24.0 size=N/A time=00:00:34.66 bitrate=N/A speed=0.801x    
+frame= 1053 fps= 24 q=27.0 size=N/A time=00:00:35.13 bitrate=N/A speed=0.802x    
+frame= 1064 fps= 24 q=23.0 size=N/A time=00:00:35.38 bitrate=N/A speed=0.795x    
+frame= 1071 fps= 24 q=24.0 size=N/A time=00:00:35.61 bitrate=N/A speed=0.791x    
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a711.ts' for writing
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7.m3u8.tmp' for writing
+frame= 1098 fps= 24 q=27.0 size=N/A time=00:00:36.54 bitrate=N/A speed=0.802x    
+frame= 1120 fps= 24 q=24.0 size=N/A time=00:00:37.24 bitrate=N/A speed=0.808x    
+frame= 1141 fps= 24 q=23.0 size=N/A time=00:00:37.94 bitrate=N/A speed=0.812x    
+frame= 1156 fps= 24 q=24.0 size=N/A time=00:00:38.42 bitrate=N/A speed=0.813x    
+frame= 1166 fps= 24 q=26.0 size=N/A time=00:00:38.86 bitrate=N/A speed=0.809x    
+frame= 1171 fps= 24 q=23.0 size=N/A time=00:00:39.10 bitrate=N/A speed=0.804x    
+frame= 1176 fps= 24 q=23.0 size=N/A time=00:00:39.10 bitrate=N/A speed=0.795x    
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a712.ts' for writing
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7.m3u8.tmp' for writing
+frame= 1188 fps= 24 q=28.0 size=N/A time=00:00:39.56 bitrate=N/A speed=0.794x    
+frame= 1208 fps= 24 q=24.0 size=N/A time=00:00:40.26 bitrate=N/A speed=0.798x    
+frame= 1211 fps= 24 q=22.0 size=N/A time=00:00:40.26 bitrate=N/A speed=0.79x    
+frame= 1215 fps= 23 q=22.0 size=N/A time=00:00:40.49 bitrate=N/A speed=0.783x    
+frame= 1229 fps= 23 q=25.0 size=N/A time=00:00:40.98 bitrate=N/A speed=0.783x    
+frame= 1252 fps= 24 q=20.0 size=N/A time=00:00:41.67 bitrate=N/A speed=0.789x    
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a713.ts' for writing
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7.m3u8.tmp' for writing
+frame= 1278 fps= 24 q=23.0 size=N/A time=00:00:42.60 bitrate=N/A speed=0.798x    
+frame= 1291 fps= 24 q=26.0 size=N/A time=00:00:43.07 bitrate=N/A speed=0.797x    
+frame= 1300 fps= 24 q=24.0 size=N/A time=00:00:43.30 bitrate=N/A speed=0.793x    
+frame= 1333 fps= 24 q=24.0 size=N/A time=00:00:44.46 bitrate=N/A speed=0.807x    
+frame= 1342 fps= 24 q=25.0 size=N/A time=00:00:44.69 bitrate=N/A speed=0.802x    
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a714.ts' for writing
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7.m3u8.tmp' for writing
+frame= 1368 fps= 24 q=22.0 size=N/A time=00:00:45.62 bitrate=N/A speed=0.811x    
+frame= 1380 fps= 24 q=24.0 size=N/A time=00:00:45.88 bitrate=N/A speed=0.794x    
+frame= 1387 fps= 24 q=26.0 size=N/A time=00:00:46.11 bitrate=N/A speed=0.791x    
+frame= 1397 fps= 24 q=27.0 size=N/A time=00:00:46.57 bitrate=N/A speed=0.791x    
+frame= 1406 fps= 24 q=25.0 size=N/A time=00:00:46.81 bitrate=N/A speed=0.788x    
+frame= 1434 fps= 24 q=23.0 size=N/A time=00:00:47.73 bitrate=N/A speed=0.797x    
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a715.ts' for writing
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7.m3u8.tmp' for writing
+frame= 1458 fps= 24 q=26.0 size=N/A time=00:00:48.64 bitrate=N/A speed=0.805x    
+frame= 1512 fps= 25 q=20.0 size=N/A time=00:00:50.29 bitrate=N/A speed=0.825x    
+
+[q] command received. Exiting.
+
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a716.ts' for writing
+[hls @ 0x55800e642dc0] Opening '/config/data/transcodes/cb82a3cbdb8f74f971d1a7cf5c6148a7.m3u8.tmp' for writing
+frame= 1514 fps= 24 q=-1.0 Lsize=N/A time=00:00:50.52 bitrate=N/A speed=0.816x    
+video:16594kB audio:595kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+[libx264 @ 0x55800e664a80] frame I:17    Avg QP:16.22  size: 48829
+[libx264 @ 0x55800e664a80] frame P:533   Avg QP:19.27  size: 20638
+[libx264 @ 0x55800e664a80] frame B:964   Avg QP:21.62  size:  5355
+[libx264 @ 0x55800e664a80] consecutive B-frames: 10.4% 11.0%  9.7% 69.0%
+[libx264 @ 0x55800e664a80] mb I  I16..4: 36.5%  0.0% 63.5%
+[libx264 @ 0x55800e664a80] mb P  I16..4: 26.4%  0.0%  0.0%  P16..4: 45.5%  0.0%  0.0%  0.0%  0.0%    skip:28.2%
+[libx264 @ 0x55800e664a80] mb B  I16..4:  2.8%  0.0%  0.0%  B16..8: 23.3%  0.0%  0.0%  direct:10.3%  skip:63.7%  L0:41.2% L1:45.0% BI:13.8%
+[libx264 @ 0x55800e664a80] coded y,uvDC,uvAC intra: 32.0% 49.9% 23.2% inter: 11.0% 19.7% 2.0%
+[libx264 @ 0x55800e664a80] i16 v,h,dc,p: 42% 26% 13% 20%
+[libx264 @ 0x55800e664a80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 29% 25% 11%  8%  6%  5%  6%  5%  6%
+[libx264 @ 0x55800e664a80] i8c dc,h,v,p: 40% 25% 24% 10%
+[libx264 @ 0x55800e664a80] Weighted P-Frames: Y:2.4% UV:2.3%
+[libx264 @ 0x55800e664a80] kb/s:2691.00

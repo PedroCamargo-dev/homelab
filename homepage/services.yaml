@@ -2,17 +2,32 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/en/configs/services
 
-- My First Group:
-    - My First Service:
-        href: http://localhost/
-        description: Homepage is awesome
+- Streaming Media Providers:
+    - Jellyfin:
+        widget:
+            type: jellyfin
+            url: http://192.168.1.100:8096
+            key: 89d5b99ce8b446e5ba4fdcb0c0ba70c8
+            enableBlocks: true
+            enableNowPlaying: true
 
-- My Second Group:
-    - My Second Service:
-        href: http://localhost/
-        description: Homepage is the best
+- Network Infrastructure:
+    - Nginx Proxy Manager:
+        widget:
+            type: npm
+            url: http://192.168.1.100:81
+            username: pedrocamargo3008@gmail.com
+            password: Pedro3008@
 
-- My Third Group:
-    - My Third Service:
-        href: http://localhost/
-        description: Homepage is 😎
+- Network Utilities:
+    - Pi-Hole:
+        widget:
+            type: pihole
+            url: http://192.168.1.100:3001/admin/api.php
+            key: b255c64092c400e0e7961ee7799742a4974628ca39baa7b9c314b84c19f8f462
+    - Portainer:
+        widget:
+            type: portainer
+            url: https://192.168.1.100:9443
+            env: 2
+            key: ptr_FOX+2ASJw0GHf65BgXBtcJ1FKOkrNGhH/LZrA2cwHWk=

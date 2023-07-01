@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LiveTvOptions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GuideDays xsi:nil="true" />
+  <EnableRecordingSubfolders>false</EnableRecordingSubfolders>
+  <EnableOriginalAudioWithEncodedRecordings>false</EnableOriginalAudioWithEncodedRecordings>
+  <TunerHosts>
+    <TunerHostInfo>
+      <Id>bfb6acaab6a94a00bc6ce7f1a29ef306</Id>
+      <Url>http://testo.app-host11.xyz:2095/get.php?username=Tourobox1-Is7nn0GGnJ&amp;password=5dW2vaFASP&amp;type=m3u</Url>
+      <Type>m3u</Type>
+      <ImportFavoritesOnly>false</ImportFavoritesOnly>
+      <AllowHWTranscoding>false</AllowHWTranscoding>
+      <EnableStreamLooping>false</EnableStreamLooping>
+      <TunerCount>0</TunerCount>
+    </TunerHostInfo>
+    <TunerHostInfo>
+      <Id>8e89569756564d3b9ae74159e1c8a9d3</Id>
+      <Url>http://testo.app-host11.xyz:2095/get.php?username=Tourobox1-7R4PaUGAOl&amp;password=m5SEkzZUd9&amp;type=m3u</Url>
+      <Type>m3u</Type>
+      <ImportFavoritesOnly>false</ImportFavoritesOnly>
+      <AllowHWTranscoding>false</AllowHWTranscoding>
+      <EnableStreamLooping>false</EnableStreamLooping>
+      <TunerCount>0</TunerCount>
+    </TunerHostInfo>
+    <TunerHostInfo>
+      <Id>5fb95cd52e8c4cb8b7e5d937ff51d572</Id>
+      <Url>http://bccdn.xyz:80/get.php?username=maicon2032bba&amp;password=maicon3244ab&amp;type=m3u_plus</Url>
+      <Type>m3u</Type>
+      <ImportFavoritesOnly>false</ImportFavoritesOnly>
+      <AllowHWTranscoding>false</AllowHWTranscoding>
+      <EnableStreamLooping>false</EnableStreamLooping>
+      <TunerCount>0</TunerCount>
+    </TunerHostInfo>
+    <TunerHostInfo>
+      <Id>6496c988a3cf443bbfe5013555f69e81</Id>
+      <Url>http://5ce.co:80/get.php?username=Contine&amp;password=Lu28052005&amp;type=m3u_plus</Url>
+      <Type>m3u</Type>
+      <ImportFavoritesOnly>false</ImportFavoritesOnly>
+      <AllowHWTranscoding>false</AllowHWTranscoding>
+      <EnableStreamLooping>false</EnableStreamLooping>
+      <TunerCount>0</TunerCount>
+    </TunerHostInfo>
+    <TunerHostInfo>
+      <Id>f7e9c464ccee4a6a9b8bb6173479121a</Id>
+      <Url>http://31.42.185.216:8000/get.php?username=3K2T6R1CA3&amp;password=4GZ9DKB9BZ&amp;type=m3u_plus</Url>
+      <Type>m3u</Type>
+      <ImportFavoritesOnly>false</ImportFavoritesOnly>
+      <AllowHWTranscoding>false</AllowHWTranscoding>
+      <EnableStreamLooping>false</EnableStreamLooping>
+      <TunerCount>0</TunerCount>
+    </TunerHostInfo>
+  </TunerHosts>
+  <ListingProviders />
+  <PrePaddingSeconds>0</PrePaddingSeconds>
+  <PostPaddingSeconds>0</PostPaddingSeconds>
+  <MediaLocationsCreated />
+  <RecordingPostProcessorArguments>"{path}"</RecordingPostProcessorArguments>
+</LiveTvOptions>

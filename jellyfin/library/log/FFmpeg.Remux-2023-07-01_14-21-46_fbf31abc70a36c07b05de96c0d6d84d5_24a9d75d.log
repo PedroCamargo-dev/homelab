@@ -1,0 +1,422 @@
+/videos/d891c57d-04c7-88a3-3c22-846ea422a92b/live.m3u8
+
+{"Protocol":1,"Id":"fbf31abc70a36c07b05de96c0d6d84d5","Path":"http://172.26.0.2:8096/LiveTv/LiveStreamFiles/f6f2929cc9ac4ef4b602defe7f758ccb/stream.ts","EncoderPath":null,"EncoderProtocol":null,"Type":0,"Container":"mpegts","Size":null,"Name":null,"IsRemote":true,"ETag":null,"RunTimeTicks":null,"ReadAtNativeFramerate":false,"IgnoreDts":true,"IgnoreIndex":false,"GenPtsInput":false,"SupportsTranscoding":true,"SupportsDirectStream":true,"SupportsDirectPlay":true,"IsInfiniteStream":true,"RequiresOpening":true,"OpenToken":null,"RequiresClosing":true,"LiveStreamId":"a17c75760a04e99b68cf766e11316e1c_09efa0d56b934a82adec00a87b837fb0_fbf31abc70a36c07b05de96c0d6d84d5","BufferMs":null,"RequiresLooping":false,"SupportsProbing":true,"VideoType":null,"IsoType":null,"Video3DFormat":null,"MediaStreams":[{"Codec":"h264","CodecTag":null,"Language":null,"ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/90000","CodecTimeBase":null,"Title":null,"VideoRange":"SDR","VideoRangeType":"SDR","VideoDoViTitle":null,"LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":"720p H264 SDR","NalLengthSize":"0","IsInterlaced":false,"IsAVC":null,"ChannelLayout":null,"BitRate":8000000,"BitDepth":8,"RefFrames":1,"PacketLength":null,"Channels":null,"SampleRate":null,"IsDefault":false,"IsForced":false,"Height":720,"Width":1280,"AverageFrameRate":29.97003,"RealFrameRate":29.97003,"Profile":"Main","Type":1,"AspectRatio":"16:9","Index":-1,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":"yuv420p","Level":31,"IsAnamorphic":false},{"Codec":"aac","CodecTag":null,"Language":null,"ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/90000","CodecTimeBase":null,"Title":null,"VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":"AAC - Stereo","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":"stereo","BitRate":98720,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":2,"SampleRate":44100,"IsDefault":false,"IsForced":false,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":"LC","Type":0,"AspectRatio":null,"Index":-1,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":null,"Level":0,"IsAnamorphic":null}],"MediaAttachments":[],"Formats":[],"Bitrate":8098720,"Timestamp":null,"RequiredHttpHeaders":{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.85 Safari/537.36"},"TranscodingUrl":null,"TranscodingSubProtocol":null,"TranscodingContainer":null,"AnalyzeDurationMs":3000,"DefaultAudioStreamIndex":null,"DefaultSubtitleStreamIndex":null}
+
+/usr/lib/jellyfin-ffmpeg/ffmpeg -analyzeduration 3000000 -user_agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.85 Safari/537.36" -fflags +igndts+genpts -f mpegts  -i "http://172.26.0.2:8096/LiveTv/LiveStreamFiles/f6f2929cc9ac4ef4b602defe7f758ccb/stream.ts" -map_metadata -1 -map_chapters -1 -threads 0 -sn -codec:v:0 copy -start_at_zero -flags -global_header -codec:a:0 copy -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 3 -hls_segment_type mpegts -start_number 0 -hls_base_url "hls/98a39bb708bddc7e2073e6cee35157ab/" -hls_segment_filename "/config/data/transcodes/98a39bb708bddc7e2073e6cee35157ab%d.ts" -hls_playlist_type event -hls_list_size 0 -y "/config/data/transcodes/98a39bb708bddc7e2073e6cee35157ab.m3u8"
+
+
+ffmpeg version 5.1.3-Jellyfin Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.3.0-1ubuntu1~22.04.1)
+  configuration: --prefix=/usr/lib/jellyfin-ffmpeg --target-os=linux --extra-libs=-lfftw3f --extra-version=Jellyfin --disable-doc --disable-ffplay --disable-ptx-compression --disable-static --disable-libxcb --disable-sdl2 --disable-xlib --enable-lto --enable-gpl --enable-version3 --enable-shared --enable-gmp --enable-gnutls --enable-chromaprint --enable-libdrm --enable-libass --enable-libfreetype --enable-libfribidi --enable-libfontconfig --enable-libbluray --enable-libmp3lame --enable-libopus --enable-libtheora --enable-libvorbis --enable-libopenmpt --enable-libdav1d --enable-libwebp --enable-libvpx --enable-libx264 --enable-libx265 --enable-libzvbi --enable-libzimg --enable-libfdk-aac --arch=amd64 --enable-libsvtav1 --enable-libshaderc --enable-libplacebo --enable-vulkan --enable-opencl --enable-vaapi --enable-amf --enable-libmfx --enable-ffnvcodec --enable-cuda --enable-cuda-llvm --enable-cuvid --enable-nvdec --enable-nvenc
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[h264 @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 1 times
+[h264 @ 0x562da44e8780] decode_slice_header error
+[h264 @ 0x562da44e8780] no frame!
+[mpegts @ 0x562da44df640] Could not find codec parameters for stream 0 (Video: h264 ([27][0][0][0] / 0x001B), none): unspecified size
+Consider increasing the value for the 'analyzeduration' (3000000) and 'probesize' (5000000) options
+Input #0, mpegts, from 'http://172.26.0.2:8096/LiveTv/LiveStreamFiles/f6f2929cc9ac4ef4b602defe7f758ccb/stream.ts':
+  Duration: N/A, start: 2329.085689, bitrate: N/A
+  Program 1 
+    Metadata:
+      service_name    : Service01
+      service_provider: FFmpeg
+  Stream #0:0[0x100]: Video: h264 ([27][0][0][0] / 0x001B), none, 90k tbr, 90k tbn
+  Stream #0:1[0x101](por): Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, 98 kb/s
+  Stream #0:2[0x102](leg): Subtitle: dvb_subtitle ([6][0][0][0] / 0x0006)
+Output #0, hls, to '/config/data/transcodes/98a39bb708bddc7e2073e6cee35157ab.m3u8':
+  Metadata:
+    encoder         : Lavf59.27.100
+  Stream #0:0: Video: h264 ([27][0][0][0] / 0x001B), none, q=2-31, 90k tbr, 90k tbn
+  Stream #0:1: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, 98 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+frame=    0 fps=0.0 q=-1.0 size=N/A time=00:00:00.00 bitrate=N/A speed=N/A    
+[NULL @ 0x562da44e8780] non-existing PPS 0 referenced
+    Last message repeated 4 times
+frame=    0 fps=0.0 q=-1.0 size=N/A time=00:00:03.50 bitrate=N/A speed=0.116x    
+[hls @ 0x562da4511a80] Opening '/config/data/transcodes/98a39bb708bddc7e2073e6cee35157ab0.ts' for writing
+[hls @ 0x562da4511a80] Opening '/config/data/transcodes/98a39bb708bddc7e2073e6cee35157ab.m3u8.tmp' for writing
+frame=    0 fps=0.0 q=-1.0 Lsize=N/A time=00:00:03.50 bitrate=N/A speed=0.116x    
+video:0kB audio:42kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown

@@ -1,5 +1,1357 @@
-[2023-06-25T23:04:25.605Z] info: docker.yaml was copied to the config folder
-[2023-06-25T23:04:25.635Z] info: services.yaml was copied to the config folder
-[2023-06-25T23:04:25.651Z] info: bookmarks.yaml was copied to the config folder
-[2023-06-25T23:04:25.788Z] info: widgets.yaml was copied to the config folder
-[2023-06-25T23:04:26.167Z] info: kubernetes.yaml was copied to the config folder
+[2023-06-30T22:49:17.042Z] info: docker.yaml was copied to the config folder
+[2023-06-30T22:49:17.139Z] info: services.yaml was copied to the config folder
+[2023-06-30T22:49:17.162Z] info: bookmarks.yaml was copied to the config folder
+[2023-06-30T22:49:17.178Z] info: widgets.yaml was copied to the config folder
+[2023-06-30T22:49:17.956Z] info: kubernetes.yaml was copied to the config folder
+[2023-06-30T22:52:03.944Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:52:03.976Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:52:07.875Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:52:07.878Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:52:11.513Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:52:11.515Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:52:15.736Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:52:15.738Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:52:16.808Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:52:16.817Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:52:25.825Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:52:25.827Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:52:37.385Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:52:37.386Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:52:41.321Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:52:41.325Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:52:44.737Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:52:44.741Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:52:47.786Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:52:47.788Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:53:58.585Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:53:58.590Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:54:06.830Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:54:06.832Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:54:16.040Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:54:16.042Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:54:20.472Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:54:20.480Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:54:35.617Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:54:35.621Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:54:55.525Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:54:55.526Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:55:46.529Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:55:46.529Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:57:04.969Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:57:04.971Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:57:05.782Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:57:05.797Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:58:53.341Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:58:53.349Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:58:54.150Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:58:54.151Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:59:33.258Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:59:33.265Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:59:34.766Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:59:34.767Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:59:38.005Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:59:38.006Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:59:44.357Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:59:44.358Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:59:54.515Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:59:54.520Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T22:59:55.551Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T22:59:55.551Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:01:42.909Z] error: <httpProxy> Error calling http://127.0.0.1:3001/admin/api.php...
+[2023-06-30T23:01:42.915Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:01:44.016Z] error: <httpProxy> Error calling http://127.0.0.1:3001/admin/api.php...
+[2023-06-30T23:01:44.019Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:01:58.544Z] error: <httpProxy> Error calling http://127.0.0.1:3001/admin/api.php...
+[2023-06-30T23:01:58.547Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:02:09.160Z] error: <httpProxy> Error calling http://127.0.0.1:3001/admin/api.php...
+[2023-06-30T23:02:09.164Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:02:10.504Z] error: <httpProxy> Error calling http://127.0.0.1:3001/admin/api.php...
+[2023-06-30T23:02:10.505Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:02:19.768Z] error: undefined
+[2023-06-30T23:02:20.631Z] error: <httpProxy> Error calling http://[::1]:3001/admin/api.php...
+[2023-06-30T23:02:20.632Z] error: <httpProxy> [
+  500,
+  Error: connect EADDRNOTAVAIL ::1:3001 - Local (:::0)
+      at internalConnect (node:net:1066:16)
+      at defaultTriggerAsyncIdScope (node:internal/async_hooks:464:18)
+      at node:net:1250:9
+      at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+    errno: -99,
+    code: 'EADDRNOTAVAIL',
+    syscall: 'connect',
+    address: '::1',
+    port: 3001
+  }
+]
+[2023-06-30T23:02:21.447Z] error: <httpProxy> Error calling http://[::1]:3001/admin/api.php...
+[2023-06-30T23:02:21.451Z] error: <httpProxy> [
+  500,
+  Error: connect EADDRNOTAVAIL ::1:3001 - Local (:::0)
+      at internalConnect (node:net:1066:16)
+      at defaultTriggerAsyncIdScope (node:internal/async_hooks:464:18)
+      at node:net:1250:9
+      at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+    errno: -99,
+    code: 'EADDRNOTAVAIL',
+    syscall: 'connect',
+    address: '::1',
+    port: 3001
+  }
+]
+[2023-06-30T23:02:29.306Z] error: <httpProxy> Error calling http://[::1]:3001/admin/api.php...
+[2023-06-30T23:02:29.308Z] error: <httpProxy> [
+  500,
+  Error: connect EADDRNOTAVAIL ::1:3001 - Local (:::0)
+      at internalConnect (node:net:1066:16)
+      at defaultTriggerAsyncIdScope (node:internal/async_hooks:464:18)
+      at node:net:1250:9
+      at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+    errno: -99,
+    code: 'EADDRNOTAVAIL',
+    syscall: 'connect',
+    address: '::1',
+    port: 3001
+  }
+]
+[2023-06-30T23:02:33.126Z] error: Failed to load services.yaml, please check for errors
+[2023-06-30T23:02:33.127Z] error: YAMLException: bad indentation of a mapping entry (19:23)
+
+ 16 |     - Pi-Hole:
+ 17 |         widget:
+ 18 |             type: pihole
+ 19 |             url: [::1]:3001/admin/api.php?summaryRaw& ...
+----------------------------^
+ 20 |             key: b255c64092c400e0e7961ee7799742a49746 ...
+[2023-06-30T23:02:33.960Z] error: Failed to load services.yaml, please check for errors
+[2023-06-30T23:02:33.960Z] error: YAMLException: bad indentation of a mapping entry (19:23)
+
+ 16 |     - Pi-Hole:
+ 17 |         widget:
+ 18 |             type: pihole
+ 19 |             url: [::1]:3001/admin/api.php?summaryRaw& ...
+----------------------------^
+ 20 |             key: b255c64092c400e0e7961ee7799742a49746 ...
+[2023-06-30T23:02:39.617Z] error: <httpProxy> Error calling http://[::1]:3001/admin/api.php...
+[2023-06-30T23:02:39.623Z] error: <httpProxy> [
+  500,
+  Error: connect EADDRNOTAVAIL ::1:3001 - Local (:::0)
+      at internalConnect (node:net:1066:16)
+      at defaultTriggerAsyncIdScope (node:internal/async_hooks:464:18)
+      at node:net:1250:9
+      at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+    errno: -99,
+    code: 'EADDRNOTAVAIL',
+    syscall: 'connect',
+    address: '::1',
+    port: 3001
+  }
+]
+[2023-06-30T23:04:36.566Z] error: <httpProxy> Error calling http://[::1]:3001/admin/api.php...
+[2023-06-30T23:04:36.569Z] error: <httpProxy> [
+  500,
+  Error: connect EADDRNOTAVAIL ::1:3001 - Local (:::0)
+      at internalConnect (node:net:1066:16)
+      at defaultTriggerAsyncIdScope (node:internal/async_hooks:464:18)
+      at node:net:1250:9
+      at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+    errno: -99,
+    code: 'EADDRNOTAVAIL',
+    syscall: 'connect',
+    address: '::1',
+    port: 3001
+  }
+]
+[2023-06-30T23:04:38.210Z] error: <httpProxy> Error calling http://[::1]:3001/admin/api.php...
+[2023-06-30T23:04:38.212Z] error: <httpProxy> [
+  500,
+  Error: connect EADDRNOTAVAIL ::1:3001 - Local (:::0)
+      at internalConnect (node:net:1066:16)
+      at defaultTriggerAsyncIdScope (node:internal/async_hooks:464:18)
+      at node:net:1250:9
+      at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+    errno: -99,
+    code: 'EADDRNOTAVAIL',
+    syscall: 'connect',
+    address: '::1',
+    port: 3001
+  }
+]
+[2023-06-30T23:05:06.135Z] error: <httpProxy> Error calling http://[::1]:3001/admin/api.php...
+[2023-06-30T23:05:06.138Z] error: <httpProxy> [
+  500,
+  Error: connect EADDRNOTAVAIL ::1:3001 - Local (:::0)
+      at internalConnect (node:net:1066:16)
+      at defaultTriggerAsyncIdScope (node:internal/async_hooks:464:18)
+      at node:net:1250:9
+      at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+    errno: -99,
+    code: 'EADDRNOTAVAIL',
+    syscall: 'connect',
+    address: '::1',
+    port: 3001
+  }
+]
+[2023-06-30T23:07:29.570Z] error: <httpProxy> Error calling http://[::1]:3001/admin/api.php...
+[2023-06-30T23:07:29.571Z] error: <httpProxy> [
+  500,
+  Error: connect EADDRNOTAVAIL ::1:3001 - Local (:::0)
+      at internalConnect (node:net:1066:16)
+      at defaultTriggerAsyncIdScope (node:internal/async_hooks:464:18)
+      at node:net:1250:9
+      at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+    errno: -99,
+    code: 'EADDRNOTAVAIL',
+    syscall: 'connect',
+    address: '::1',
+    port: 3001
+  }
+]
+[2023-06-30T23:07:30.714Z] error: <httpProxy> Error calling http://[::1]:3001/admin/api.php...
+[2023-06-30T23:07:30.717Z] error: <httpProxy> [
+  500,
+  Error: connect EADDRNOTAVAIL ::1:3001 - Local (:::0)
+      at internalConnect (node:net:1066:16)
+      at defaultTriggerAsyncIdScope (node:internal/async_hooks:464:18)
+      at node:net:1250:9
+      at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+    errno: -99,
+    code: 'EADDRNOTAVAIL',
+    syscall: 'connect',
+    address: '::1',
+    port: 3001
+  }
+]
+[2023-06-30T23:07:37.816Z] error: <httpProxy> Error calling http://[::1]:3001/admin/api.php...
+[2023-06-30T23:07:37.826Z] error: <httpProxy> [
+  500,
+  Error: connect EADDRNOTAVAIL ::1:3001 - Local (:::0)
+      at internalConnect (node:net:1066:16)
+      at defaultTriggerAsyncIdScope (node:internal/async_hooks:464:18)
+      at node:net:1250:9
+      at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+    errno: -99,
+    code: 'EADDRNOTAVAIL',
+    syscall: 'connect',
+    address: '::1',
+    port: 3001
+  }
+]
+[2023-06-30T23:07:42.575Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:07:42.591Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:07:50.224Z] error: <httpProxy> Error calling http://127.0.0.1:3001/admin/api.php...
+[2023-06-30T23:07:50.225Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:07:51.208Z] error: <httpProxy> Error calling http://127.0.0.1:3001/admin/api.php...
+[2023-06-30T23:07:51.210Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:07:57.908Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:07:57.909Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:07:58.641Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:07:58.649Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:08:12.549Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:08:12.550Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:09:05.532Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:09:05.543Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:09:07.288Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:09:07.288Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:09:21.018Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:09:21.018Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:42:44.346Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:42:44.358Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:42:51.888Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:42:51.889Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:43:32.754Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:43:32.759Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:43:39.137Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:43:39.145Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:43:40.782Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:43:40.787Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:43:42.390Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:43:42.400Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:43:47.283Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:43:47.285Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:43:56.306Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:43:56.308Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:44:03.534Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:44:03.544Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:45:20.350Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:45:20.368Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:45:40.123Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:45:40.124Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:45:41.945Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:45:41.947Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:45:48.169Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:45:48.171Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:46:32.178Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:46:32.178Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:52:36.080Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:52:36.081Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-06-30T23:54:25.427Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-06-30T23:54:25.429Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-07-01T00:37:46.315Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-07-01T00:37:46.343Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-07-01T00:48:48.570Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-07-01T00:48:48.581Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-07-01T00:49:08.947Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-07-01T00:49:08.948Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-07-01T00:50:24.840Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-07-01T00:50:24.842Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-07-01T00:50:28.545Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-07-01T00:50:28.549Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-07-01T00:50:43.648Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-07-01T00:50:43.649Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-07-01T00:54:12.695Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-07-01T00:54:12.698Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-07-01T00:58:57.978Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-07-01T00:58:57.979Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-07-01T00:58:59.265Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php...
+[2023-07-01T00:58:59.265Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-07-01T00:59:07.778Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php/admin/api.php...
+[2023-07-01T00:59:07.778Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-07-01T00:59:08.409Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php/admin/api.php...
+[2023-07-01T00:59:08.411Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-07-01T00:59:14.103Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php/admin/api.php...
+[2023-07-01T00:59:14.104Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-07-01T00:59:15.110Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php/admin/api.php...
+[2023-07-01T00:59:15.164Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-07-01T01:00:33.914Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php/admin/api.php...
+[2023-07-01T01:00:33.915Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-07-01T01:00:35.145Z] error: <httpProxy> Error calling http://localhost:3001/admin/api.php/admin/api.php...
+[2023-07-01T01:00:35.148Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-07-01T01:01:12.462Z] error: <httpProxy> Error calling http://127.0.0.1:3001/admin/api.php/admin/api.php...
+[2023-07-01T01:01:12.464Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-07-01T01:01:13.421Z] error: <httpProxy> Error calling http://127.0.0.1:3001/admin/api.php/admin/api.php...
+[2023-07-01T01:01:13.427Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3001
+  }
+]
+[2023-07-01T01:06:31.868Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443/api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:06:37.987Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443/api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:06:54.477Z] error: <credentialedProxyHandler> HTTP Error 400 calling https://192.168.1.100:9443/api/endpoints/local/docker/containers/json?all=1
+[2023-07-01T01:06:55.640Z] error: <credentialedProxyHandler> HTTP Error 400 calling https://192.168.1.100:9443/api/endpoints/local/docker/containers/json?all=1
+[2023-07-01T01:08:40.787Z] error: can not read an implicit mapping pair; a colon is missed (25:44)
+
+ 22 |  ... t:
+ 23 |  ... ype: portainer
+ 24 |  ... rl: https://192.168.1.100:9443/api/stacks
+ 25 |  ... "running", "stopped", "total"]
+-----------------------------------------^
+ 26 |  ... nv: "local"
+ 27 |  ... ey: ptr_FOX+2ASJw0GHf65BgXBtcJ1FKOkrNGhH/LZrA2cwHWk=
+[2023-07-01T01:08:40.796Z] error: can not read an implicit mapping pair; a colon is missed (25:44)
+
+ 22 |  ... t:
+ 23 |  ... ype: portainer
+ 24 |  ... rl: https://192.168.1.100:9443/api/stacks
+ 25 |  ... "running", "stopped", "total"]
+-----------------------------------------^
+ 26 |  ... nv: "local"
+ 27 |  ... ey: ptr_FOX+2ASJw0GHf65BgXBtcJ1FKOkrNGhH/LZrA2cwHWk=
+[2023-07-01T01:08:41.280Z] error: Failed to load services.yaml, please check for errors
+[2023-07-01T01:08:41.281Z] error: YAMLException: can not read an implicit mapping pair; a colon is missed (25:44)
+
+ 22 |  ... t:
+ 23 |  ... ype: portainer
+ 24 |  ... rl: https://192.168.1.100:9443/api/stacks
+ 25 |  ... "running", "stopped", "total"]
+-----------------------------------------^
+ 26 |  ... nv: "local"
+ 27 |  ... ey: ptr_FOX+2ASJw0GHf65BgXBtcJ1FKOkrNGhH/LZrA2cwHWk=
+[2023-07-01T01:08:41.391Z] error: Failed to load services.yaml, please check for errors
+[2023-07-01T01:08:41.399Z] error: YAMLException: can not read an implicit mapping pair; a colon is missed (25:44)
+
+ 22 |  ... t:
+ 23 |  ... ype: portainer
+ 24 |  ... rl: https://192.168.1.100:9443/api/stacks
+ 25 |  ... "running", "stopped", "total"]
+-----------------------------------------^
+ 26 |  ... nv: "local"
+ 27 |  ... ey: ptr_FOX+2ASJw0GHf65BgXBtcJ1FKOkrNGhH/LZrA2cwHWk=
+[2023-07-01T01:08:42.700Z] error: Failed to load services.yaml, please check for errors
+[2023-07-01T01:08:42.707Z] error: YAMLException: can not read an implicit mapping pair; a colon is missed (25:44)
+
+ 22 |  ... t:
+ 23 |  ... ype: portainer
+ 24 |  ... rl: https://192.168.1.100:9443/api/stacks
+ 25 |  ... "running", "stopped", "total"]
+-----------------------------------------^
+ 26 |  ... nv: "local"
+ 27 |  ... ey: ptr_FOX+2ASJw0GHf65BgXBtcJ1FKOkrNGhH/LZrA2cwHWk=
+[2023-07-01T01:08:57.990Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443/api/stacks/api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:09:08.083Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443/api/stacks/api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:09:28.380Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443//api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:09:59.915Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443//api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:12:04.554Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443/api/api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:12:06.300Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443/api/api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:12:07.454Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443/api/api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:12:12.719Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443/api/api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:15:16.742Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443/api/endpoints/api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:15:18.952Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443/api/endpoints/api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:15:29.115Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443/api/endpoints/api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:15:44.199Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443/api/endpoints/api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:15:57.694Z] error: <httpProxy> Error calling https://localhost:9443//api/endpoints/1/docker/containers/json...
+[2023-07-01T01:15:57.695Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 9443
+  }
+]
+[2023-07-01T01:15:57.696Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://localhost:9443//api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:15:59.905Z] error: <httpProxy> Error calling https://localhost:9443//api/endpoints/1/docker/containers/json...
+[2023-07-01T01:15:59.916Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 9443
+  }
+]
+[2023-07-01T01:15:59.916Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://localhost:9443//api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:16:09.625Z] error: <httpProxy> Error calling https://localhost:9443//api/endpoints/1/docker/containers/json...
+[2023-07-01T01:16:09.629Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 9443
+  }
+]
+[2023-07-01T01:16:09.629Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://localhost:9443//api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:17:24.348Z] error: <httpProxy> Error calling https://localhost:9443//api/endpoints/1/docker/containers/json...
+[2023-07-01T01:17:24.352Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 9443
+  }
+]
+[2023-07-01T01:17:24.352Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://localhost:9443//api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:17:27.157Z] error: <httpProxy> Error calling https://localhost:9443//api/endpoints/1/docker/containers/json...
+[2023-07-01T01:17:27.158Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 127.0.0.1:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 9443
+  }
+]
+[2023-07-01T01:17:27.158Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://localhost:9443//api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:17:36.469Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443//api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:17:37.410Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443//api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:17:47.701Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443//api/endpoints/1/docker/containers/json?all=1
+[2023-07-01T01:18:51.974Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443//api/endpoints/2/docker/containers/json?all=1
+[2023-07-01T01:18:53.390Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443//api/endpoints/2/docker/containers/json?all=1
+[2023-07-01T01:19:03.475Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443//api/endpoints/2/docker/containers/json?all=1
+[2023-07-01T01:19:07.795Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443//api/endpoints/2/docker/containers/json?all=1
+[2023-07-01T01:19:13.691Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443//api/endpoints/2/docker/containers/json?all=1
+[2023-07-01T01:19:18.677Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://192.168.1.100:9443//api/endpoints/2/docker/containers/json?all=1
+[2023-07-01T01:21:01.965Z] error: <npmProxyHandler> Error 404 logging into npm <Buffer 3c 68 74 6d 6c 3e 0d 0a 3c 68 65 61 64 3e 3c 74 69 74 6c 65 3e 34 30 34 20 4e 6f 74 20 46 6f 75 6e 64 3c 2f 74 69 74 6c 65 3e 3c 2f 68 65 61 64 3e 0d ... 100 more bytes>
+[2023-07-01T01:21:07.045Z] error: <npmProxyHandler> Error 404 logging into npm <Buffer 3c 68 74 6d 6c 3e 0d 0a 3c 68 65 61 64 3e 3c 74 69 74 6c 65 3e 34 30 34 20 4e 6f 74 20 46 6f 75 6e 64 3c 2f 74 69 74 6c 65 3e 3c 2f 68 65 61 64 3e 0d ... 100 more bytes>
+[2023-07-01T01:21:11.042Z] error: <npmProxyHandler> Error 404 logging into npm <Buffer 3c 68 74 6d 6c 3e 0d 0a 3c 68 65 61 64 3e 3c 74 69 74 6c 65 3e 34 30 34 20 4e 6f 74 20 46 6f 75 6e 64 3c 2f 74 69 74 6c 65 3e 3c 2f 68 65 61 64 3e 0d ... 100 more bytes>
+[2023-07-01T01:21:11.667Z] error: <npmProxyHandler> Error 404 logging into npm <Buffer 3c 68 74 6d 6c 3e 0d 0a 3c 68 65 61 64 3e 3c 74 69 74 6c 65 3e 34 30 34 20 4e 6f 74 20 46 6f 75 6e 64 3c 2f 74 69 74 6c 65 3e 3c 2f 68 65 61 64 3e 0d ... 100 more bytes>
+[2023-07-01T01:21:16.711Z] error: <npmProxyHandler> Error 404 logging into npm <Buffer 3c 68 74 6d 6c 3e 0d 0a 3c 68 65 61 64 3e 3c 74 69 74 6c 65 3e 34 30 34 20 4e 6f 74 20 46 6f 75 6e 64 3c 2f 74 69 74 6c 65 3e 3c 2f 68 65 61 64 3e 0d ... 100 more bytes>
+[2023-07-01T01:21:19.844Z] error: <npmProxyHandler> Error 404 logging into npm <Buffer 3c 68 74 6d 6c 3e 0d 0a 3c 68 65 61 64 3e 3c 74 69 74 6c 65 3e 34 30 34 20 4e 6f 74 20 46 6f 75 6e 64 3c 2f 74 69 74 6c 65 3e 3c 2f 68 65 61 64 3e 0d ... 100 more bytes>
+[2023-07-01T01:21:37.652Z] error: <npmProxyHandler> Error 404 logging into npm <Buffer 3c 68 74 6d 6c 3e 0d 0a 3c 68 65 61 64 3e 3c 74 69 74 6c 65 3e 34 30 34 20 4e 6f 74 20 46 6f 75 6e 64 3c 2f 74 69 74 6c 65 3e 3c 2f 68 65 61 64 3e 0d ... 100 more bytes>
+[2023-07-01T01:58:01.406Z] error: <httpProxy> Error calling https://192.168.1.100:9443/api/endpoints/2/docker/containers/json...
+[2023-07-01T01:58:01.499Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 192.168.1.100:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '192.168.1.100',
+    port: 9443
+  }
+]
+[2023-07-01T01:58:01.503Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://192.168.1.100:9443/api/endpoints/2/docker/containers/json?all=1
+[2023-07-01T01:58:01.514Z] error: <httpProxy> Error calling http://192.168.1.100:81/api/nginx/proxy-hosts...
+[2023-07-01T01:58:01.514Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 192.168.1.100:81
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '192.168.1.100',
+    port: 81
+  }
+]
+[2023-07-01T01:58:05.037Z] error: <httpProxy> Error calling http://192.168.1.100:81/api/nginx/proxy-hosts...
+[2023-07-01T01:58:05.042Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 192.168.1.100:81
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '192.168.1.100',
+    port: 81
+  }
+]
+[2023-07-01T01:58:05.585Z] error: <httpProxy> Error calling https://192.168.1.100:9443/api/endpoints/2/docker/containers/json...
+[2023-07-01T01:58:05.587Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 192.168.1.100:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '192.168.1.100',
+    port: 9443
+  }
+]
+[2023-07-01T01:58:05.588Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://192.168.1.100:9443/api/endpoints/2/docker/containers/json?all=1
+[2023-07-01T01:58:13.325Z] error: <httpProxy> Error calling http://192.168.1.100:81/api/nginx/proxy-hosts...
+[2023-07-01T01:58:13.333Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 192.168.1.100:81
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '192.168.1.100',
+    port: 81
+  }
+]
+[2023-07-01T01:58:13.370Z] error: <httpProxy> Error calling https://192.168.1.100:9443/api/endpoints/2/docker/containers/json...
+[2023-07-01T01:58:13.370Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 192.168.1.100:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '192.168.1.100',
+    port: 9443
+  }
+]
+[2023-07-01T01:58:13.370Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://192.168.1.100:9443/api/endpoints/2/docker/containers/json?all=1
+[2023-07-01T01:58:15.516Z] error: <httpProxy> Error calling http://192.168.1.100:81/api/nginx/proxy-hosts...
+[2023-07-01T01:58:15.517Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 192.168.1.100:81
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '192.168.1.100',
+    port: 81
+  }
+]
+[2023-07-01T01:58:15.685Z] error: <httpProxy> Error calling https://192.168.1.100:9443/api/endpoints/2/docker/containers/json...
+[2023-07-01T01:58:15.685Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 192.168.1.100:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '192.168.1.100',
+    port: 9443
+  }
+]
+[2023-07-01T01:58:15.686Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://192.168.1.100:9443/api/endpoints/2/docker/containers/json?all=1
+[2023-07-01T01:58:19.110Z] error: <httpProxy> Error calling https://192.168.1.100:9443/api/endpoints/2/docker/containers/json...
+[2023-07-01T01:58:19.116Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 192.168.1.100:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '192.168.1.100',
+    port: 9443
+  }
+]
+[2023-07-01T01:58:19.117Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://192.168.1.100:9443/api/endpoints/2/docker/containers/json?all=1
+[2023-07-01T01:58:19.129Z] error: <httpProxy> Error calling http://192.168.1.100:81/api/nginx/proxy-hosts...
+[2023-07-01T01:58:19.391Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 192.168.1.100:81
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '192.168.1.100',
+    port: 81
+  }
+]
+[2023-07-01T01:58:28.584Z] error: <httpProxy> Error calling https://192.168.1.100:9443/api/endpoints/2/docker/containers/json...
+[2023-07-01T01:58:28.586Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 192.168.1.100:9443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '192.168.1.100',
+    port: 9443
+  }
+]
+[2023-07-01T01:58:28.586Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://192.168.1.100:9443/api/endpoints/2/docker/containers/json?all=1
+[2023-07-01T01:58:28.601Z] error: <httpProxy> Error calling http://192.168.1.100:81/api/nginx/proxy-hosts...
+[2023-07-01T01:58:28.601Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 192.168.1.100:81
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '192.168.1.100',
+    port: 81
+  }
+]
